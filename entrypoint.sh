@@ -1,7 +1,9 @@
 #!/bin/sh -l
 
-
-jupyter nbconvert --to markdown *.ipynb
+for i in $(find . | grep -F .ipynb); do
+  jupyter nbconvert --to markdown $i
+  echo $i
+done
 
 echo "Hello $1"
 echo $(ls)
