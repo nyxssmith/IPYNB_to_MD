@@ -1,16 +1,6 @@
 # action.yml
 name: 'IPYNB_to_MD'
-description: 'Greet someone and record the time'
-inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
-    required: true
-    default: 'World'
-outputs:
-  contents: # id of output
-    description: 'output of ls'
+description: 'Copies all notesbooks to markdown versions'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.who-to-greet }}
