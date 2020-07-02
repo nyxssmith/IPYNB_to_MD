@@ -1,7 +1,7 @@
 #!/bin/sh -l
 
 
-jupyter nbconvert --to md *.ipynb
+jupyter nbconvert --to markdown *.ipynb
 
 echo "Hello $1"
 echo $(ls)
