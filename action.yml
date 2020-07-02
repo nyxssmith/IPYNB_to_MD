@@ -1,5 +1,5 @@
 # action.yml
-name: 'Hello World'
+name: 'IPYNB_to_MD'
 description: 'Greet someone and record the time'
 inputs:
   who-to-greet:  # id of input
@@ -7,8 +7,8 @@ inputs:
     required: true
     default: 'World'
 outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  contents: # id of output
+    description: 'output of ls'
 runs:
   using: 'docker'
   image: 'Dockerfile'
